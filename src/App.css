@@ -1,8 +1,107 @@
-.App {
+.card {
+  border-radius: 1rem;
+  border-style: double;
+  border-color: rgb(87, 9, 63);
+  background-color: rgba(187, 147, 132, 0.527);
+  min-height: 10vh;
+  max-width: 50vh;
+  /* display: -moz-grid-line; */
+  padding: 10px;
   text-align: center;
+  float: left; 
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: last baseline; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 53px;
 }
 
-.App-logo {
+.link{
+  color: rgb(53, 37, 46);
+  text-shadow: 1px 1px rgb(179, 47, 47);
+  text-decoration: none;
+}
+
+body{
+  
+  background-image: url(./media/tamanna-rumee-nswz6tIpgZk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 1300px 650px; ;
+  
+}
+
+
+
+.publisher{
+  color: rgb(185, 42, 42);
+  text-shadow: 2px 2px rgb(216, 204, 204);
+}
+
+.name{
+  color: rgb(53, 37, 46);
+  text-shadow: 2px 2px rgb(179, 47, 47);
+}
+
+.steps{
+  text-shadow: 2px 2px rgb(139, 57, 57);
+}
+
+
+
+
+
+.check{
+  
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.checked{
+  text-decoration: line-through;
+  /* height: 1.25em;
+  width: 1.25em; */
+}
+
+.navbar{
+  background-color: rgb(187, 147, 132);
+  display: flex;
+  list-style-type: none;
+  height: 2em;
+  padding-top: 0.8em;
+  }
+
+.navlink{
+  color: rgb(7, 3, 3);
+  text-shadow: 1px 1px rgb(133, 111, 111);
+  text-decoration: none;
+}
+
+.recipeCard{
+  border-radius: 1rem;
+  border-style: double;
+  border-color: rgb(87, 9, 63);
+  background-color: rgba(187, 147, 132, 0.527);
+  min-height: 10vh;
+  max-width: 100vh;
+  /* display: -moz-grid-line; */
+  padding: 10px;
+  text-align: center;
+  /* align-content: center;
+  justify-content: center;
+  align-self: center;
+  align-items: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: last baseline; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 53px;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +134,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
