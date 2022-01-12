@@ -5,7 +5,7 @@ import Recipe1 from "./components/Recipe1";
 import Recipe2 from "./components/Recipe2";
 import Recipe3 from "./components/Recipe3";
 import Navbar from "./components/Navbar";
-
+import Contac from "./components/Contac";
 
 function App() {
   
@@ -19,7 +19,8 @@ function App() {
         <Route path="/" component={GetRecipe} exact />
         <Route path="/recipe1" component={Recipe1} />
         <Route path="/recipe2" component={Recipe2} />
-        <Route path="/recipe3" component={Recipe3} />                       
+        <Route path="/recipe3" component={Recipe3} />    
+        <Route path="/contact" component={Contac} />                    
         </Switch>
     </div>
     </div>

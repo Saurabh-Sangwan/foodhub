@@ -3,7 +3,7 @@ import {recipes} from './Data'
 import {useState, useEffect} from 'react'
 
 function Recipe1() {
-    const [size, setSize] = useState(["","","2"])
+    // const [size, setSize] = useState(["","","2"])
     // var checkstyle = ["","","",""]
     
     // function toggleClass(num) {

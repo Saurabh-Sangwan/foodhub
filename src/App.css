@@ -44,11 +44,40 @@ body{
   text-shadow: 2px 2px rgb(179, 47, 47);
 }
 
+.feedbackButton{
+  display: inline-block;
+  margin-left: 0em;
+}
+
 .steps{
   text-shadow: 2px 2px rgb(139, 57, 57);
 }
 
+.contactCard{
+  padding-left: 4em;
+  }
 
+.vl {
+  border-left: 6px solid rgb(128, 68, 41);
+  border-style: groove;
+  height: 500px;
+  position: absolute; 
+  left: 50%;
+  margin-left: -3px;
+  margin-top: 5em;
+  top: 0; 
+  
+}
+
+.insta{
+  background: -webkit-linear-gradient(rgb(67, 30, 170), rgb(231, 10, 10));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1{
+  display: inline;
+}
 
 
 
