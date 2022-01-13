@@ -1,31 +1,57 @@
-import GetRecipe from "./components/GetRecipe";
-import "./App.css";
-import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
-import Recipe1 from "./components/Recipe1";
-import Recipe2 from "./components/Recipe2";
-import Recipe3 from "./components/Recipe3";
-import Navbar from "./components/Navbar";
+import React from "react";
+import { MemoryRouter as Router, Switch, Route } from "react-router-dom";
+import Recipe from "./components/Recipe/Recipe";
 import Contac from "./components/Contac";
+import RecipeDetails from "./components/RecipeDetails/RecipeDetails";
+import "./App.css";
 
-function App() {
-  
+// create a array of recipes with values name, publisher, steps
+const recipes = [
+  {
+    name: "Pizza",
+    publisher: "Jonas",
+    steps: ["1. Put the dough in the oven", "2. Put the pizza in the oven", "3. Put the pizza in the oven", "4. Put the pizza in the oven"]
+  },
+  {
+    name: "Burger",
+    publisher: "Jonas",
+    steps: ["1. Put the dough in the oven", "2. Put the pizza in the oven", "3. Put the pizza in the oven", "4. Put the pizza in the oven"]
+  },
+  {
+    name: "Pasta",
+    publisher: "Jonas",
+    steps: ["1. Put the dough in the oven", "2. Put the pizza in the oven", "3. Put the pizza in the oven", "4. Put the pizza in the oven"]
+  }
+];
+
+const RecipeContext = React.createContext();
+
+
+const App = () => {
+
   return (
     <div>
-    
-    <div>
-          
+      <Router>
         <Switch>
-        
-        <Route path="/" component={GetRecipe} exact />
-        <Route path="/recipe1" component={Recipe1} />
-        <Route path="/recipe2" component={Recipe2} />
-        <Route path="/recipe3" component={Recipe3} />    
-        <Route path="/contact" component={Contac} />                    
+          {/* <Route path="/" component={GetRecipe} exact /> */}
+          <Route exact path="/">
+            <RecipeContext.Provider value={recipes}>
+              <Recipe />
+            </RecipeContext.Provider>
+          </Route>
+          <Route path="/recipe">
+            <RecipeContext.Provider value={recipes}>
+              <RecipeDetails />
+            </RecipeContext.Provider>
+          </Route>
+          <Route path="/contact" component={Contac} />
         </Switch>
-    </div>
+      </Router>
     </div>
   );
 
 }
 
 export default App;
+
+export { RecipeContext };

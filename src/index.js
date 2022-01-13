@@ -9,10 +9,8 @@ import { BrowserRouter as Router, Switch,
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-        <Navbar/>
-        <App />
-    </Router>
+    <Navbar/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
